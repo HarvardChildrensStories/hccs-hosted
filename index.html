@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Harvard College Children's Stories</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function (event) {
+            var depth, i, layer, layers, len, movement, topDistance, translate3d;
+            topDistance = this.pageYOffset;
+            layers = document.querySelectorAll("[data-type='parallax']");
+            for (i = 0, len = layers.length; i < len; i++) {
+                layer = layers[i];
+                depth = layer.getAttribute('data-depth');
+                movement = -(topDistance * depth);
+                translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+                layer.style['-webkit-transform'] = translate3d;
+                layer.style['-moz-transform'] = translate3d;
+                layer.style['-ms-transform'] = translate3d;
+                layer.style['-o-transform'] = translate3d;
+                layer.style.transform = translate3d;
+            }
+        });
+    </script>
+
+    <!-- <script>
+    $(function () {
+        showNav()
+        var nav = document.getElementById("banner");
+        var show = true;
+
+        $(window).scroll(function () {
+            var currentScroll = $(window).scrollTop();
+            if (currentScroll < 50) {
+                showNav();
+                show = true;
+            } else {
+                hideNav();
+                show = false;
+            }
+        });
+
+        $(window).mousemove(function (event) {
+            if (show == false) {
+                if (100 - event.clientY > 0) {
+                    showNav();
+                } else {
+                    hideNav();
+                }
+            }
+        });
+
+
+        function hideNav() {
+            $(".navbar").removeClass("is-visible").addClass("is-hidden");
+        }
+
+        function showNav() {
+            $(".navbar").removeClass("is-hidden").addClass("is-visible").addClass("scrolling");
+        }
+    });
+</script> -->
+
+    <script>
+        $(function () {
+            showNav()
+            var nav = document.getElementById("banner");
+            var show = true;
+
+            $(window).scroll(function () {
+                var currentScroll = $(window).scrollTop();
+                if (currentScroll < 40) {
+                    showNav();
+
+                } else if (currentScroll > 40 & currentScroll < 60) {
+                    hideNav();
+
+                } else {
+                    hideNav2();
+                }
+            });
+
+            function hideNav() {
+                $(".navbar").removeClass("is-visible").addClass("is-hidden");
+            }
+
+            function hideNav2() {
+                $(".navbar").removeClass("is-visible").removeClass("is-hidden").addClass("is-hidden2");
+            }
+
+            function showNav() {
+                $(".navbar").removeClass("is-hidden").removeClass("is-hidden2").addClass("is-visible").addClass(
+                    "scrolling");
+            }
+        });
+    </script>
+
+</head>
+
+<nav id="banner" class="navbar navbar-expand-sm navbar-fixed-top">
+    <ul class="navbar-nav">
+        <div class="row">
+            <div id="col-left" class="col">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="../">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../anthology">anthology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../construction">about us</a>
+                </li>
+            </div>
+            <div id="col-right" class="col">
+                <li class="nav-item">
+                    <a class="nav-link" href="../construction">books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../construction">partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../construction">contact us</a>
+                </li>
+            </div>
+        </div>
+    </ul>
+</nav>
+
+<body>
+    <div id="hero">
+        <div class="layer-1 layer" data-depth="0.10" data-type="parallax"></div>
+        <div class="layer-2 layer" data-depth="0.30" data-type="parallax"></div>
+        <div class="layer-3 layer" data-depth="0.60" data-type="parallax"></div>
+        <div class="layer-4 layer" data-depth="0.80" data-type="parallax"></div>
+    </div>
+
+    <div id="hero-mobile"></div>
+
+    <div id="intro">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="header col-lg-auto">
+                    <p>Harvard College Children's Stories</p>
+                </div>
+            </div>
+
+            <div id="info" class="row justify-content-center">
+                <div id="rose-left" class="col-3">
+                </div>
+                <div class="info-child col-6">
+                    <p>Harvard College Children's Stories integrates students' interests in creative writing, drawing,
+                        and foreign languages, coordinating their creative efforts for the benefit of under-served
+                        children abroad and in the local Boston community. It is our hope that by presenting each child
+                        with a book written, illustrated, and bound especially for him or her, we will inspire a love of
+                        reading. During the semester, we also do outreach in engaging local children to develop an
+                        appreciation for cross-cultural connection and literacy.</p>
+                </div>
+                <div id="rose-right" class="col-3">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <a id="yellow-button" class="button" href="../construction">
+                    Read More
+                </a>
+            </div>
+
+            <div class="row featured header justify-content-center">
+                <div id="child-left" class="col" style="background-position: right center;">
+                </div>
+                <div class="col-lg-auto">
+                    Children's Anthology
+                </div>
+                <div id="child-right" class="col" style="background-position: left center;">
+                </div>
+            </div>
+
+            <div id="info" class="row justify-content-center">
+                <div class="info-child col-6 p-0">
+                    <p>HCCS is currently creating an anthology to educate, support, and inspire kids during the COVID-19
+                        pandemic. We are looking for submissions of art and writing from people of all ages, all around
+                        the world!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <a id="yellow-button" class="button" href="../construction">
+                    Learn More
+                </a>
+            </div>
+
+
+            <div class="row featured header justify-content-center">
+                <div id="book-left" class="col">
+                </div>
+                <div class="col-lg-auto">
+                    Featured Books
+                </div>
+                <div id="book-right" class="col">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id='book-display'>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="example-book col">
+                    <img class="img-thumbnail" src="static/images/Book1.png"></img>
+                </div>
+                <div class="example-book col">
+                    <img class="img-thumbnail" src="static/images/Book2.png"></img>
+                </div>
+                <div class="example-book col">
+                    <img class="img-thumbnail" src="static/images/Book3.png"></img>
+                </div>
+                <div class="example-book col">
+                    <img class="img-thumbnail" src="static/images/Book4.png"></img>
+                </div>
+                <div class="example-book col">
+                    <img class="img-thumbnail" src="static/images/Book5.png"></img>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <a id="white-button" class="button" href="../construction">
+                    Browse More
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom">
+
+    </div>
+
+</body>
