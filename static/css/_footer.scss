@@ -1,0 +1,24 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.685);
+    color: rgb(105, 106, 112);
+    text-align: center;
+}
+  
+.icon {
+    color: rgb(202, 187, 54);
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+    
+.icon:hover {
+    opacity: 0.7;
+}
+    

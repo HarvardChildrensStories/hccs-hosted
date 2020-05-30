@@ -1,0 +1,9 @@
+.warning {
+    @include questa();
+    font-size: 2vw;
+    border-style: double;
+    border-radius: 5px;
+    padding: 1%;
+    color: $lightblue;
+    border-color: $gold;
+}

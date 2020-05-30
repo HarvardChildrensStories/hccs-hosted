@@ -1,0 +1,33 @@
+
+/* Multiple Layer Background */
+
+.layer {
+    background-position: top left;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 1200px;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  .layer-1 {
+      background-image: url("../images/L41.png");
+      background-position: top center;
+  }
+  
+  .layer-2 {
+      background-image: url("../images/L52.png");
+      background-position: top center;
+  }
+  
+  .layer-3 {
+      background-image: url("../images/L53.png");
+      background-position: top center;
+  }
+  
+  .layer-4 {
+      background-image: url("../images/L54.png");
+      background-position: bottom center;
+  }
+  

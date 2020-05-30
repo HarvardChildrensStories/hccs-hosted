@@ -1,0 +1,56 @@
+#hero, .layer {
+	min-height: 800px;
+}
+
+#hero {
+    height: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-mobile {
+	display: none;
+	background: url("../images/mobile.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    height: 400px;
+}
+
+#intro {
+    font-size: 1.6vw;
+    background-color: $white;
+    color: $gold;
+    @include questa();
+}
+
+#book-display {
+    height: 500px;
+    background-color: #FFF;
+    background-image: url("../images/clouds.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 90% auto;
+    .container {
+        position: relative;
+        top: 35%;
+        width: 85%;
+    }
+}
+
+.mt-10{
+    margin-top: 10%;
+}
+
+
+#book-display .row {
+    position: relative;
+}
+
+.example-book {
+    padding: 2%;
+}
+#bottom {
+    height: 100px;
+    background-color: #FFF;
+}

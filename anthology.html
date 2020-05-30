@@ -1,9 +1,10 @@
-<!-- CSS -->
+<!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COVID-19 Project</title>
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -19,98 +20,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-
-    <script>
-        window.addEventListener('scroll', function (event) {
-            var depth, i, layer, layers, len, movement, topDistance, translate3d;
-            topDistance = this.pageYOffset;
-            layers = document.querySelectorAll("[data-type='parallax']");
-            for (i = 0, len = layers.length; i < len; i++) {
-                layer = layers[i];
-                depth = layer.getAttribute('data-depth');
-                movement = -(topDistance * depth);
-                translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-                layer.style['-webkit-transform'] = translate3d;
-                layer.style['-moz-transform'] = translate3d;
-                layer.style['-ms-transform'] = translate3d;
-                layer.style['-o-transform'] = translate3d;
-                layer.style.transform = translate3d;
-            }
-        });
-    </script>
-
-    <!-- <script>
-    $(function () {
-        showNav()
-        var nav = document.getElementById("banner");
-        var show = true;
-
-        $(window).scroll(function () {
-            var currentScroll = $(window).scrollTop();
-            if (currentScroll < 50) {
-                showNav();
-                show = true;
-            } else {
-                hideNav();
-                show = false;
-            }
-        });
-
-        $(window).mousemove(function (event) {
-            if (show == false) {
-                if (100 - event.clientY > 0) {
-                    showNav();
-                } else {
-                    hideNav();
-                }
-            }
-        });
-
-
-        function hideNav() {
-            $(".navbar").removeClass("is-visible").addClass("is-hidden");
-        }
-
-        function showNav() {
-            $(".navbar").removeClass("is-hidden").addClass("is-visible").addClass("scrolling");
-        }
-    });
-</script> -->
-
-    <script>
-        $(function () {
-            showNav()
-            var nav = document.getElementById("banner");
-            var show = true;
-
-            $(window).scroll(function () {
-                var currentScroll = $(window).scrollTop();
-                if (currentScroll < 40) {
-                    showNav();
-
-                } else if (currentScroll > 40 & currentScroll < 60) {
-                    hideNav();
-
-                } else {
-                    hideNav2();
-                }
-            });
-
-            function hideNav() {
-                $(".navbar").removeClass("is-visible").addClass("is-hidden");
-            }
-
-            function hideNav2() {
-                $(".navbar").removeClass("is-visible").removeClass("is-hidden").addClass("is-hidden2");
-            }
-
-            function showNav() {
-                $(".navbar").removeClass("is-hidden").removeClass("is-hidden2").addClass("is-visible").addClass(
-                    "scrolling");
-            }
-        });
-    </script>
-
+    <script src="static/js/script.js"></script>
 </head>
 
 
@@ -146,18 +56,18 @@
 
 <body>
     <div class="container-fluid parallax">
-        <div class="h-20"></div>
+        <div class="h-15"></div>
 
         <div class="row justify-content-center">
-            <div class="col-7 cloud-container">
+            <div class="col-10 col-md-7 cloud-container">
                 <div class="cloud cloud-top">
-                    <img src="static/images/top.png">
+                    <img class="w-100" src="static/images/top.png">
                 </div>
             </div>
         </div>
 
         <div class="row justify-content-center">
-            <div class="text col-7">
+            <div class="text col-10 col-md-7 ">
                 <div class="row header mt-5 p-0 justify-content-center">
                     <div id="child-left" class="col"></div>
                     <div class="col-md-auto p-0">
@@ -172,7 +82,7 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="frame">
+                    <div class="frame balance-text">
                         <p>During the COVID-19 pandemic, Harvard College Children’s Stories is creating an anthology to
                             educate, support, and inspire children. We are looking for submissions of art and writing
                             from people of all ages, from all over the world!</p>
@@ -193,19 +103,19 @@
                                 ✨</a>
                         </p>
 
-                        <p>We are accepting submissions on a rolling basis until
-                            June 15th.</br>Preivew the detailed guidelines <a
+                        <p>We will accept submissions on a rolling basis until
+                            June 15<sup>th</sup>.</br>Preivew the detailed guidelines <a
                                 class="body-link a3" href="https://drive.google.com/file/d/1gxkB7X2dXxKtHvJ03bwdhlPSChJo7xLL/view?usp=sharing">✨<span>here</span> ✨</a></p>
                         </p>
 
-                        <p>All appropriate submissions will be posted to this website so that everyone can access all
+                        <p>All appropriate submissions will be posted to this website so that everyone can access
                             the
                             amazing
-                            submissions from around the world! We will also be compiling an anthology of selected works
+                            submissions from around the world! We will also compile an anthology of selected works
                             to
                             be
                             published on Amazon.com, with all proceeds donated to <a
-                                href="https://www.unicefusa.org/">UNICEF</a> to help with COVID-19 relief. This
+                                href="https://www.unicefusa.org/">UNICEF</a> for COVID-19 relief. This
                             book
                             will be available for free in digital form on this website.</p>
 
@@ -217,7 +127,7 @@
                         <div class="row h2 mt-5 p-0 justify-content-center">
                             <div id="env-left" class="col"></div>
                             <div class="col-md-auto p-0">
-                                Join our Email List
+                                <h2>Join Our Email List</h2>
                             </div>
                             <div id="env-right" class="col"></div>
                         </div>
@@ -240,7 +150,7 @@
                                         pname="b_e89ae87db1037b86a84c8d863_17134bc36e" tabindex="-1" value=""></div>
                                 <div class="clear">
                                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                                       class="button yellow mb-3">
+                                       class="button yellow-button mb-3">
                                 </div>
 
                             </form>
@@ -274,7 +184,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="text col-7 mt-3">
+            <div class="text col-10 col-md-7 mt-3">
                 <div class="row header mt-5 p-0 justify-content-center">
                     <div id="star-left" class="col"></div>
                     <div class="col-md-auto p-0">
@@ -285,17 +195,17 @@
 
                 <div class="frame2">
 
-                    <h2 class="q1">Who are the editors and what is their experience relevant to this publication?
+                    <h2 class="balance-text">Who are the editors and what is their experience relevant to this publication?
                     </h2>
                     <p>The HCCS Editorial Board consists of:</p>
 
                 </div>
 
-                <div style="color: #c2cbff;">Mythri Ambatipudi, Maggie Chen, Nensi Gjata, John LaVelle, and Jude T.
+                <div class="editors" style="color: #c2cbff;">Mythri Ambatipudi, Maggie Chen, Nensi Gjata, John LaVelle, and Jude T.
                     Okonkwo</div>
 
                 <div class="frame2">
-                    <div class="q">
+                    <div class="pb-4">
                         <p>Our editorial board has years of experience in the selection and creation of
                             child-appropriate
                             literature and art for our associated club, Harvard College Children's Stories. As a part of
@@ -307,7 +217,7 @@
                             during this trying time.</p>
                     </div>
 
-                    <div class="q">
+                    <div class="pb-4">
                         <h2 class="q2">Who will publish the book and how will it be made available?</h2>
                         <p>This book will be published by Harvard College Children's Stories through Amazon’s
                             CreateSpace
@@ -323,8 +233,8 @@
                             on-campus UNICEF club.</p>
                     </div>
 
-                    <div class="q">
-                        <h2 class="q3">How will the finished publication be publicized and distributed?</h2>
+                    <div class="pb-4">
+                        <h2 class="balance-text">How will the finished publication be publicized and distributed?</h2>
                         <p>After the book is finalized, the anthology will be released on harvardchildrensstories.com
                             and
                             uploaded to amazon.com for purchase. During this time, a press release will be sent out
@@ -335,7 +245,7 @@
                             through the Harvard PBHA Service Network. </p>
                     </div>
 
-                    <div class="q">
+                    <div class="pb-4">
                         <h2 class="q4">How will writers whose works are chosen be compensated?</h2>
                         <p>As a public service non-profit organization, our ultimate aim is to provide COVID-19 relief
                             and
@@ -351,8 +261,8 @@
                             project. </p>
                     </div>
 
-                    <div class="q">
-                        <h2 class="q5">What rights do authors retain in the process from submission to publication?</h2>
+                    <div class="pb-4">
+                        <h2 class="balance-text">What rights do authors retain in the process from submission to publication?</h2>
                         <p>In publishing the Anthology, HCCS reserves the right to first publication. Once the anthology
                             is
                             published, contributors retain the right to use their contributed work as they choose.
@@ -367,9 +277,9 @@
                             with creators. </p>
                     </div>
 
-                    <div class="q">
+                    <div class="pb-4">
                         <h2>Acknowledgements</h2>
-                        <p>This project is funded by generous support from the Harvard COOP Grant and Dr. Elizabeth
+                        <p>This project is funded by generous support from the Harvard COOP Grant and Dr.&nbsp;Elizabeth
                             Boeun Kim, PhD., Ed.M. '10, an HCCS alumna.</p>
                     </div>
                 </div>
@@ -378,19 +288,19 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="text col-7 mt-3">
-                <div class="questions">
+            <div class="text col-10 col-md-7 mt-3">
+                <div class="p-5">
                     <h2>More Questions?</h2>
-                    <p>Contact us at <a
+                    <p class="m-0">Contact us at <a
                             href="mailto:harvard.childrens.stories@gmail.com">harvard.childrens.stories@gmail.com</a>
                     </p>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-7 cloud-container">
+            <div class="col-10 col-md-7 cloud-container">
                 <div class="cloud cloud-bottom">
-                    <img src="static/images/bottom.png">
+                    <img class="w-100" id="cloud-bottom" src="static/images/bottom.png">
                 </div>
             </div>
         </div>

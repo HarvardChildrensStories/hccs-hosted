@@ -1,0 +1,105 @@
+.parallax {
+    background-image: url("../images/back.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h-15 {
+    height: 15vw;
+}
+
+.cloud-container {
+    padding: .3%;
+    margin: 1% 0%;
+}
+
+.cloud {
+    border-color: $white;
+    border-width: .5vw;
+}
+
+.cloud-top {
+    padding-bottom: .3%;
+    border-style: none none double none;
+}
+
+.cloud-bottom {
+    padding-top: .3%;
+    border-style: double none none none;
+}
+
+.text {
+    background-color: $white;
+    font-size: 1.3vw;
+    color: $lightblue;
+    @include questa();
+    border-style: double;
+    border-radius: 10px;
+    border-width: .5vw;
+    border-color: rgba(36, 193, 236, 0.842);
+
+    a {
+        color: $darklilac;
+        text-decoration: none;
+        &:hover{
+            color: $gold;
+        }    
+    }
+
+    span {
+        background: linear-gradient(to bottom, $white 0%, $white 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 3px 3px;
+        color: $darklilac;
+        text-decoration: none;
+        &:hover{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .7s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23c2cbff' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+            color: $lightlilac;
+            background-position: center 90%;
+            background-repeat: repeat-x;
+            background-size: 80%;
+            border-bottom: 0;
+            padding-bottom: .3em;
+            text-decoration: none;
+        }  
+      }
+}
+
+#mailchimp {
+    input {
+        width: 80%;
+        text-align: center;
+        margin: 1%;
+    }
+    div.mce_inline_error {
+        width: 80%;
+    }
+    #mce-EMAIL{
+        background-color: #e3e8ff !important;
+        color: #7a7a7a !important;
+    }
+    div#mce-responses.clear {
+        width: 80%;
+        margin: 1% auto;
+        border-style: double;
+        border-color: #eef1ff;
+        border-radius: 5px;
+    
+    }
+    .mce_inline_error {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #c2cbff !important;
+        font-weight: bold;
+        z-index: 1;
+        color: #fff;
+    }
+    
+}
+
+
+
+

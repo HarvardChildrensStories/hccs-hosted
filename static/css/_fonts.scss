@@ -1,0 +1,24 @@
+@mixin normal {
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: trial;
+    src: url("../fonts/LUMOS.TTF");
+} 
+
+@font-face {
+    font-family: 'transcend';
+    src: url('../fonts/transcend-regular-webfont.woff2') format('woff2'),
+         url('../fonts/transcend-regular-webfont.woff') format('woff');
+    @include normal();
+}
+
+@font-face {
+    font-family: 'questa';
+    src: url('../fonts/questa.woff2') format('woff2'),
+         url('../fonts/questa.woff') format('woff');
+    @include normal();
+
+}

@@ -1,0 +1,46 @@
+@media screen and (max-width: 960px) {
+    #hero {
+        display: none;
+   }
+    #hero-mobile {
+        display: block;
+   }
+   #book-display {
+        height: 200px;
+   }
+   #banner {
+    height: 200px;
+    top: -120px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .button {
+    font-size: 3.5vw;
+    }
+    .header {
+        font-size: 5vw;
+    }
+    
+    #intro {
+        font-size: 3vw;
+    }
+    nav a {
+        font-size: 1.7vw;
+    }
+    .text {
+        font-size: 2.5vw;
+    }
+    h2 {
+        font-size: 3.5vw;
+    }
+    div.p-5 {
+        padding: 10% !important;
+    }
+    div.mt-5 {
+        margin-top: 10% !important;
+    }
+    .editors{
+        padding: 0% 10%;
+    }
+}

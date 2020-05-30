@@ -1,0 +1,25 @@
+$gold: #FFD100;
+$lightblue: #60CDEB;
+$darkblue: #0090B8;
+$lightlilac: #C2CBFF;
+$darklilac: #A9B6FF;
+$lightbrown: #A37C47;
+$darkbrown: #473B29;
+$white: #FFF;
+
+@mixin questa {
+    font-family: 'questa', sans-serif; 
+    text-align: center;
+}
+
+@import "./nav";
+@import "./layers";
+@import "./home";
+@import "./anthology";
+@import "./partnerships";
+@import "./construction";
+@import "./left-right";
+@import "./text";  
+@import "./fonts";  
+@import "./footer";
+@import "./mobile";

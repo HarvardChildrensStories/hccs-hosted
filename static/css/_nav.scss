@@ -1,0 +1,114 @@
+.is-hidden {
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.2s;
+}
+
+.is-hidden2 {
+    display: none;
+  }
+
+.is-visible {
+    transition: transform 0.4s, opacity 0.2s;
+  }
+
+.navbar-hide {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+
+// nav {
+//     min-height: 300px;
+//     width: 100%;
+//     background-image: url("../images/nav.png");
+//     background-position: center;
+//     background-size: 80% auto;
+//     background-repeat: no-repeat;
+//     position: fixed;
+//     z-index: 1000;
+//     top: -75px;
+//     transition: background 0.4s ease-in-out;
+//     @include questa();
+//     ul{
+//         width: 80%;
+//         margin: auto;
+//     }
+//     a {
+//         font-size: 1.5vw;
+//         color: $lightbrown;
+//         &:hover{
+//             color: $darkbrown;
+//         }
+//         .active {
+//             color: $darkbrown;
+//         }
+//     }
+//     .row {
+//         width: 100%;
+//         margin: auto;
+//     }
+//     li {
+//         display: inline-block;
+//     }
+//     #col-left>li {
+//         padding: 2%;
+//     }
+    
+//     #col-right>li {
+//         padding: 1.5%;
+//     }
+// }
+
+
+nav {
+    width: 100%;
+    text-align: center;
+    transition: background 0.4s ease-in-out;
+    
+}
+
+nav a {
+    font-size: 1.5vw;
+    color: #A37C47;
+    font-family: 'questa', sans-serif; 
+}
+
+nav a:hover {
+    color: rgb(71, 59, 41);
+}
+
+nav a.active {
+    color: rgb(71, 59, 41);
+}
+
+#banner>ul {
+    width: 80%;
+    margin: auto;
+}
+
+ul>.row{
+    width: 100%;
+    margin: auto;
+}
+nav li {
+    display: inline-block;
+}
+
+#col-left>li {
+    padding: 2%;
+}
+
+#col-right>li {
+    padding: 1.5%;
+}
+#banner {
+    min-height: 300px;
+    width: 100%;
+    background-image: url("../images/nav.png");
+    background-position: center;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1000;
+    top: -75px;
+}

@@ -1,0 +1,41 @@
+#partner {
+    background-image: none;
+    background-color: white;
+}
+  
+.boston img {
+    width: 100%;
+    height: 500px;
+    /* overflow: hidden; */
+    object-fit: cover;
+    position: absolute; right: 0; bottom: 0;
+
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+  
+.stuff{
+    height: 500px;
+    background-color: white;
+}
+  
+.card {
+    margin: 20px;
+}
+  
+.card-back {
+    opacity: 0;
+    transition: 0.4s;
+    background: white;
+    color: gold;
+    margin: 5px;
+    padding: 10px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+  
+.card:hover .card-back {
+    opacity: 0.9;
+}

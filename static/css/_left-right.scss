@@ -1,0 +1,66 @@
+@mixin leftright($xpos, $size) {
+    background-position: $xpos center;
+    background-size: auto $size;
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+#child-left {
+    background-image: url("../images/child-left.png");
+    @include leftright(90%, 50%);
+}
+
+#child-right {
+    background-image: url("../images/child-right.png");
+    @include leftright(10%, 50%);
+}
+
+#star-left {
+    background-image: url("../images/star-left.png");
+    @include leftright(90%, 60%);
+}
+
+#star-right {
+    background-image: url("../images/star-right.png");
+    @include leftright(10%, 60%);
+}
+
+#env-left {
+    background-image: url("../images/envelope.png");
+    @include leftright(90%, 40%);
+}
+
+#env-right {
+    background-image: url("../images/envelope.png");
+    @include leftright(10%, 40%);
+}
+
+#warning-left {
+    background-image: url("../images/warning.png");
+    @include leftright(90%, 70%);
+}
+
+#warning-right {
+    background-image: url("../images/warning.png");
+    @include leftright(10%, 70%);
+}
+
+#rose-left{
+    background-image: url("../images/roses-sl.png");
+    @include leftright(80%, 90%);
+}
+
+#rose-right {
+    background-image: url("../images/roses-sr.png");
+    @include leftright(20%, 90%);
+}
+
+#book-left {
+    background-image: url("../images/books-left.png");
+    @include leftright(right, 80%);
+}
+
+#book-right {
+    background-image: url("../images/books-right.png");
+    @include leftright(left, 80%);
+}
