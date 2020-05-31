@@ -72,7 +72,7 @@ nav li {
   background-position: center;
   background-size: 80% auto;
   background-repeat: no-repeat;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   top: -75px;
 }
