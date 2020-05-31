@@ -15,31 +15,31 @@ window.addEventListener('scroll', function (event) {
     }
 });
 
-$(function () {
-    showNav()
-    var nav = document.getElementById("banner");
-    var show = true;
+// $(function () {
+//     showNav()
+//     var nav = document.getElementById("banner");
+//     var show = true;
 
-    $(window).scroll(function () {
-        var currentScroll = $(window).scrollTop();
-        if (currentScroll < 50) {
-            showNav();
-            show = true;
-        } else {
-            hideNav();
-            show = false;
-        }
-    });
+//     $(window).scroll(function () {
+//         var currentScroll = $(window).scrollTop();
+//         if (currentScroll < 50) {
+//             showNav();
+//             show = true;
+//         } else {
+//             hideNav();
+//             show = false;
+//         }
+//     });
 
-    $(window).mousemove(function (event) {
-        if (show == false) {
-            if (100 - event.clientY > 0) {
-                showNav();
-            } else {
-                hideNav();
-            }
-        }
-    });
+//     $(window).mousemove(function (event) {
+//         if (show == false) {
+//             if (100 - event.clientY > 0) {
+//                 showNav();
+//             } else {
+//                 hideNav();
+//             }
+//         }
+//     });
 
 
     function hideNav() {
