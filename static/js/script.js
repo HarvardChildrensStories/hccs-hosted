@@ -15,42 +15,6 @@ window.addEventListener('scroll', function (event) {
     }
 });
 
-// $(function () {
-//     showNav()
-//     var nav = document.getElementById("banner");
-//     var show = true;
-
-//     $(window).scroll(function () {
-//         var currentScroll = $(window).scrollTop();
-//         if (currentScroll < 50) {
-//             showNav();
-//             show = true;
-//         } else {
-//             hideNav();
-//             show = false;
-//         }
-//     });
-
-//     $(window).mousemove(function (event) {
-//         if (show == false) {
-//             if (100 - event.clientY > 0) {
-//                 showNav();
-//             } else {
-//                 hideNav();
-//             }
-//         }
-//     });
-
-
-    function hideNav() {
-        $(".navbar").removeClass("is-visible").addClass("is-hidden");
-    }
-
-    function showNav() {
-        $(".navbar").removeClass("is-hidden").addClass("is-visible").addClass("scrolling");
-    }
-});
-
 $(function () {
     showNav()
     var nav = document.getElementById("banner");
