@@ -15,6 +15,7 @@ window.addEventListener('scroll', function (event) {
     }
 });
 
+
 $(function () {
     showNav()
     var nav = document.getElementById("banner");
@@ -45,6 +46,42 @@ $(function () {
         $(".navbar").removeClass("is-hidden").removeClass("is-hidden2").addClass("is-visible").addClass(
             "scrolling");
     }
+
+    document.querySelectorAll(".book .back").forEach(element => {
+        const options = ["#FFD100", "#60CDEB", "#0090B8", "#C2CBFF", "#A9B6FF"];
+        // element.classList.add(options[randint(0, options.length - 1)]);
+        element.style.background = options[randint(0, options.length - 1)];
+    });
+
+    document.querySelectorAll(".book-link").forEach(function(el) {
+        // console.log(el);
+        el.addEventListener("click", function() {
+            el.nextElementSibling.click();
+        })
+    });
+
+    $('.carousel').carousel({
+        interval: 5000
+    });
+    document.getElementById("previous").addEventListener("click", function() {
+        $('.carousel').carousel("prev");
+    });
+    document.getElementById("next").addEventListener("click", function() {
+        $('.carousel').carousel("next");
+    });
+
+    document.querySelector(".nav-link[href='/books']").classList.add("active");
+
+    
+
+    document.querySelectorAll(".card").forEach((element) => {
+        console.log(element);
+        const options = ["blue", "purple", "gold", "red"];
+        element.style.background = options[randint(0, options.length - 1)];
+        // element.classList.add(options[randint(0, options.length - 1)]);
+    });
+
+    
 });
 
 (function (root, factory) {
@@ -452,3 +489,9 @@ $(function () {
 });
 
 balanceText();
+
+function randint(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}

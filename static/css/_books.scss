@@ -1,0 +1,61 @@
+.book {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    min-width: 100px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    &:hover{
+        // opacity: 90%;
+        cursor: pointer;
+    }
+}
+
+.book-header {
+    color: $gold;
+    @include questa();
+    margin-bottom: 2%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.book .back {
+    position: absolute;
+    top: 200%;
+    height: 100%;
+    width: 100%;
+    // opacity: 95%;
+    color: $white;
+    @include questa();
+    padding: 10%;
+    left: 0px;
+    // transition: 0.3s;
+   
+    .book-title {
+        font-size: 1.4vw;
+        border-style: double;
+        border-color: rgba(255, 255, 255, 0.2);
+        
+    }
+    .book-info {
+        font-size: 1vw;
+        padding-bottom: 10%;
+        overflow: hidden;
+        opacity: 90%;
+        position: absolute;
+        bottom: 0;
+        left:  0;
+        width: 100%;
+    }
+}
+
+
+.book:hover .back {
+    top: 0;
+}

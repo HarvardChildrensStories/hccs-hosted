@@ -6,7 +6,7 @@
         display: block;
    }
    #book-display {
-        height: 200px;
+        height: 20vh;
    }
    #banner {
     height: 200px;
@@ -42,5 +42,14 @@
     }
     .editors{
         padding: 0% 10%;
+    }
+    .book{
+    min-width: 80px;    
+    }
+    .book-title {
+        font-size: 3vw;
+    }
+    .book-info {
+        font-size: 2vw;
     }
 }

@@ -64,3 +64,27 @@
     background-image: url("../images/books-right.png");
     @include leftright(left, 80%);
 }
+
+.car-nav {
+    // background-image: url("../images/left-arrow.png");
+    padding: 10%;
+    &:hover{
+        animation: flash;
+        animation-duration: 1s;
+        --animate-repeat: 1;
+        cursor: pointer;
+    }
+}
+
+// #next {
+//     padding-left: 10%;
+//     opacity: 70%;
+//     &:hover{
+//         opacity: 100%;
+//         transition: .5s;
+//         animation: pulse;
+//         animation-duration: .5s;
+//         --animate-repeat: 2;
+//         cursor: pointer;
+//     }
+// }

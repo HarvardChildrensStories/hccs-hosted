@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+<script>
+    window.addEventListener('scroll', function (event) {
+        var depth, i, layer, layers, len, movement, topDistance, translate3d;
+        topDistance = this.pageYOffset;
+        layers = document.querySelectorAll("[data-type='parallax']");
+        for (i = 0, len = layers.length; i < len; i++) {
+            layer = layers[i];
+            depth = layer.getAttribute('data-depth');
+            movement = -(topDistance * depth);
+            translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+            layer.style['-webkit-transform'] = translate3d;
+            layer.style['-moz-transform'] = translate3d;
+            layer.style['-ms-transform'] = translate3d;
+            layer.style['-o-transform'] = translate3d;
+            layer.style.transform = translate3d;
+        }
+    });
+</script>
+
+<!-- <script>
+    $(function () {
+        showNav()
+        var nav = document.getElementById("banner");
+        var show = true;
+
+        $(window).scroll(function () {
+            var currentScroll = $(window).scrollTop();
+            if (currentScroll < 50) {
+                showNav();
+                show = true;
+            } else {
+                hideNav();
+                show = false;
+            }
+        });
+
+        $(window).mousemove(function (event) {
+            if (show == false) {
+                if (100 - event.clientY > 0) {
+                    showNav();
+                } else {
+                    hideNav();
+                }
+            }
+        });
+
+
+        function hideNav() {
+            $(".navbar").removeClass("is-visible").addClass("is-hidden");
+        }
+
+        function showNav() {
+            $(".navbar").removeClass("is-hidden").addClass("is-visible").addClass("scrolling");
+        }
+    });
+</script> -->
+
+<script>
+    $(function () {
+        showNav()
+        var nav = document.getElementById("banner");
+        var show = true;
+
+        $(window).scroll(function () {
+            var currentScroll = $(window).scrollTop();
+            if (currentScroll < 40) {
+                showNav();
+
+            } else if (currentScroll > 40 & currentScroll < 60) {
+                hideNav();
+
+            } else {
+                hideNav2();
+            }
+        });
+
+        function hideNav() {
+            $(".navbar").removeClass("is-visible").addClass("is-hidden");
+        }
+
+        function hideNav2() {
+            $(".navbar").removeClass("is-visible").removeClass("is-hidden").addClass("is-hidden2");
+        }
+
+        function showNav() {
+            $(".navbar").removeClass("is-hidden").removeClass("is-hidden2").addClass("is-visible").addClass(
+                "scrolling");
+        }
+    });
+</script>
+
+
+<nav id="banner" class="navbar navbar-expand-sm navbar-fixed-top">
+    <ul class="navbar-nav">
+        <div class="row">
+            <div id="col-left" class="col">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../anthology">anthology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../construction">about us</a>
+                </li>
+            </div>
+            <div id="col-right" class="col">
+                <li class="nav-item">
+                    <a class="nav-link" href="../construction">books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../construction">partners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../construction">contact us</a>
+                </li>
+            </div>
+        </div>
+    </ul>
+</nav>
+
+<body>
+    <div class="container-fluid">
+        <div style="height: 300px;"></div>
+        <div class="row justify-content-md-center">
+            <div id="warning-left" class="col-2"></div>
+            <div class="warning col-md-auto">
+                This page is currently under construction!</br>Please check again mid-June :)
+            </div>
+            <div id="warning-right" class="col-2"></div>
+        </div>
+    </div>
+</body>

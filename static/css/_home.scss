@@ -25,16 +25,19 @@
 }
 
 #book-display {
-    height: 500px;
+    height: 70vh;
     background-color: #FFF;
     background-image: url("../images/clouds.png");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center 25%;
     background-size: 90% auto;
     .container {
         position: relative;
         top: 35%;
         width: 85%;
+    }
+    .row{
+        margin: 0px 0px;
     }
 }
 
@@ -53,4 +56,12 @@
 #bottom {
     height: 100px;
     background-color: #FFF;
+}
+
+.home-book {
+    &:hover{
+        animation: pulse;
+        animation-duration: .5s;
+        cursor: pointer;
+    }
 }

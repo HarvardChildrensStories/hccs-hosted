@@ -77,6 +77,13 @@ nav li {
   top: -75px;
 }
 
+#data-blurb-bookshare-10157479 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 /* Multiple Layer Background */
 .layer {
   background-position: top left;
@@ -136,11 +143,11 @@ nav li {
 }
 
 #book-display {
-  height: 500px;
+  height: 70vh;
   background-color: #FFF;
   background-image: url("../images/clouds.png");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center 25%;
   background-size: 90% auto;
 }
 
@@ -148,6 +155,10 @@ nav li {
   position: relative;
   top: 35%;
   width: 85%;
+}
+
+#book-display .row {
+  margin: 0px 0px;
 }
 
 .mt-10 {
@@ -165,6 +176,14 @@ nav li {
 #bottom {
   height: 100px;
   background-color: #FFF;
+}
+
+.home-book:hover {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  cursor: pointer;
 }
 
 .parallax {
@@ -319,6 +338,69 @@ nav li {
   opacity: 0.9;
 }
 
+.book {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  -webkit-box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  min-width: 100px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+}
+
+.book:hover {
+  cursor: pointer;
+}
+
+.book-header {
+  color: #FFD100;
+  font-family: 'questa', sans-serif;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.book .back {
+  position: absolute;
+  top: 200%;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  font-family: 'questa', sans-serif;
+  text-align: center;
+  padding: 10%;
+  left: 0px;
+}
+
+.book .back .book-title {
+  font-size: 1.4vw;
+  border-style: double;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.book .back .book-info {
+  font-size: 1vw;
+  padding-bottom: 10%;
+  overflow: hidden;
+  opacity: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.book:hover .back {
+  top: 0;
+}
+
 .warning {
   font-family: 'questa', sans-serif;
   text-align: center;
@@ -424,6 +506,19 @@ nav li {
   background-size: auto 80%;
   background-repeat: no-repeat;
   padding: 0px;
+}
+
+.car-nav {
+  padding: 10%;
+}
+
+.car-nav:hover {
+  -webkit-animation: flash;
+          animation: flash;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  --animate-repeat: 1;
+  cursor: pointer;
 }
 
 .header {
@@ -549,7 +644,7 @@ footer {
     display: block;
   }
   #book-display {
-    height: 200px;
+    height: 20vh;
   }
   #banner {
     height: 200px;
@@ -584,6 +679,15 @@ footer {
   }
   .editors {
     padding: 0% 10%;
+  }
+  .book {
+    min-width: 80px;
+  }
+  .book-title {
+    font-size: 3vw;
+  }
+  .book-info {
+    font-size: 2vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
