@@ -43,7 +43,7 @@
         height: 45vh;
     }
     #banner {
-        min-height: 7vh;
+        min-height: 10vh;
     }
    .is-hidden {
         transition: top .2s ease-in-out;
@@ -51,7 +51,7 @@
     }
     .is-visible {
         transition: top .2s ease-in-out;
-        top: 0;
+        top: -3vh;
     }
     #book-display {
         height: 26vh;
