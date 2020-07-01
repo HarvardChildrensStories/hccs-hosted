@@ -1,27 +1,3 @@
-.is-hidden {
-  opacity: 0;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.4s;
-  transition: opacity 0.2s, -webkit-transform 0.4s;
-  transition: transform 0.4s, opacity 0.2s;
-  transition: transform 0.4s, opacity 0.2s, -webkit-transform 0.4s;
-}
-
-.is-hidden2 {
-  display: none;
-}
-
-.is-visible {
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.4s;
-  transition: opacity 0.2s, -webkit-transform 0.4s;
-  transition: transform 0.4s, opacity 0.2s;
-  transition: transform 0.4s, opacity 0.2s, -webkit-transform 0.4s;
-}
-
-.navbar-hide {
-  pointer-events: none;
-  opacity: 0;
-}
-
 nav {
   width: 100%;
   text-align: center;
@@ -66,22 +42,13 @@ nav li {
 }
 
 #banner {
-  min-height: 300px;
+  min-height: 25vh;
   width: 100%;
   background-image: url("../images/nav.png");
   background-position: center;
   background-size: 80% auto;
   background-repeat: no-repeat;
-  position: absolute;
   z-index: 1000;
-  top: -75px;
-}
-
-#data-blurb-bookshare-10157479 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
 /* Multiple Layer Background */
@@ -111,7 +78,12 @@ nav li {
 }
 
 .layer-4 {
-  background-image: url("../images/L54.png");
+  background-image: url("../images/L55.png");
+  background-position: bottom center;
+}
+
+.layer-5 {
+  background-image: url("../images/L56.png");
   background-position: bottom center;
 }
 
@@ -131,7 +103,6 @@ nav li {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  height: 400px;
 }
 
 #intro {
@@ -143,17 +114,17 @@ nav li {
 }
 
 #book-display {
-  height: 70vh;
+  height: 75vh;
   background-color: #FFF;
-  background-image: url("../images/clouds.png");
+  background-image: url("../images/book-display.png");
   background-repeat: no-repeat;
-  background-position: center 25%;
+  background-position: center 10%;
   background-size: 90% auto;
 }
 
 #book-display .container {
   position: relative;
-  top: 35%;
+  top: 40%;
   width: 85%;
 }
 
@@ -382,8 +353,6 @@ nav li {
 
 .book .back .book-title {
   font-size: 1.4vw;
-  border-style: double;
-  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .book .back .book-info {
@@ -395,6 +364,11 @@ nav li {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.book .back .rose-book {
+  width: 60%;
+  opacity: 70%;
 }
 
 .book:hover .back {
@@ -636,19 +610,68 @@ footer {
   opacity: 0.7;
 }
 
+.is-hidden {
+  -webkit-transition: top .5s ease-in-out;
+  transition: top .5s ease-in-out;
+  top: -30vh;
+}
+
+.is-gone {
+  display: none;
+}
+
+.is-visible {
+  -webkit-transition: top .5s ease-in-out;
+  transition: top .5s ease-in-out;
+  top: -3vh;
+}
+
 @media screen and (max-width: 960px) {
   #hero {
     display: none;
   }
   #hero-mobile {
     display: block;
+    height: 70vh;
   }
   #book-display {
-    height: 20vh;
+    height: 45vh;
   }
   #banner {
-    height: 200px;
-    top: -120px;
+    min-height: 20vh;
+  }
+  .is-hidden {
+    -webkit-transition: top .5s ease-in-out;
+    transition: top .5s ease-in-out;
+    top: -20vh;
+  }
+  .is-visible {
+    -webkit-transition: top .5s ease-in-out;
+    transition: top .5s ease-in-out;
+    top: -2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hero-mobile {
+    display: block;
+    height: 45vh;
+  }
+  #banner {
+    min-height: 7vh;
+  }
+  .is-hidden {
+    -webkit-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
+    top: -10vh;
+  }
+  .is-visible {
+    -webkit-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
+    top: 0;
+  }
+  #book-display {
+    height: 26vh;
   }
 }
 

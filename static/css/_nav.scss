@@ -1,20 +1,5 @@
-.is-hidden {
-    opacity: 0;
-    transition: transform 0.4s, opacity 0.2s;
-}
 
-.is-hidden2 {
-    display: none;
-  }
 
-.is-visible {
-    transition: transform 0.4s, opacity 0.2s;
-  }
-
-.navbar-hide {
-    pointer-events: none;
-    opacity: 0;
-  }
 
 
 // nav {
@@ -101,21 +86,15 @@ nav li {
 #col-right>li {
     padding: 1.5%;
 }
+
 #banner {
-    min-height: 300px;
+    min-height: 25vh;
     width: 100%;
     background-image: url("../images/nav.png");
     background-position: center;
     background-size: 80% auto;
     background-repeat: no-repeat;
-    position: absolute;
+    // position: absolute;
     z-index: 1000;
-    top: -75px;
 }
 
-#data-blurb-bookshare-10157479 {
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-}

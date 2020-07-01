@@ -14,7 +14,6 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% auto; 
-    height: 400px;
 }
 
 #intro {
@@ -25,15 +24,15 @@
 }
 
 #book-display {
-    height: 70vh;
+    height: 75vh;
     background-color: #FFF;
-    background-image: url("../images/clouds.png");
+    background-image: url("../images/book-display.png");
     background-repeat: no-repeat;
-    background-position: center 25%;
+    background-position: center 10%;
     background-size: 90% auto;
     .container {
         position: relative;
-        top: 35%;
+        top: 40%;
         width: 85%;
     }
     .row{

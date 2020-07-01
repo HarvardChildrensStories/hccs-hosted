@@ -1,16 +1,60 @@
+.is-hidden {
+    transition: top .5s ease-in-out;
+    top: -30vh;
+}
+
+.is-gone {
+    display: none;
+  }
+
+.is-visible {
+    transition: top .5s ease-in-out;
+    top: -3vh;
+  }
+
 @media screen and (max-width: 960px) {
     #hero {
         display: none;
    }
     #hero-mobile {
         display: block;
+        height: 70vh;
    }
    #book-display {
-        height: 20vh;
+        height: 45vh;
    }
    #banner {
-    height: 200px;
-    top: -120px;
+        min-height: 20vh;
+    }
+    .is-hidden {
+        transition: top .5s ease-in-out;
+        top: -20vh;
+    }
+    .is-visible {
+        transition: top .5s ease-in-out;
+        top: -2;
+    }
+   
+}
+
+@media screen and (max-width: 500px) {
+    #hero-mobile {
+        display: block;
+        height: 45vh;
+    }
+    #banner {
+        min-height: 7vh;
+    }
+   .is-hidden {
+        transition: top .2s ease-in-out;
+        top: -10vh;
+    }
+    .is-visible {
+        transition: top .2s ease-in-out;
+        top: 0;
+    }
+    #book-display {
+        height: 26vh;
    }
 }
 
@@ -53,3 +97,4 @@
         font-size: 2vw;
     }
 }
+
