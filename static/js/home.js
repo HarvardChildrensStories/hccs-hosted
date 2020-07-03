@@ -24,11 +24,6 @@ $(function () {
 
     animateCSS("#arrow", "fadeInDown");
 
-    
-
-    $('.carousel').carousel({
-        interval: 7000
-    });
     document.getElementById("previous").addEventListener("click", function() {
         $('.carousel').carousel("prev");
     });

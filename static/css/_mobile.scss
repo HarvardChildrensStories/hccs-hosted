@@ -43,11 +43,11 @@
         height: 45vh;
     }
     #banner {
-        min-height: 10vh;
+        min-height: 12vh;
     }
    .is-hidden {
         transition: top .2s ease-in-out;
-        top: -10vh;
+        top: -12vh;
     }
     .is-visible {
         transition: top .2s ease-in-out;
@@ -59,8 +59,8 @@
 }
 
 @media screen and (max-width: 768px) {
-   .button {
-    font-size: 3.5vw;
+    .button {
+        font-size: 3.5vw;
     }
     .header {
         font-size: 5vw;
@@ -88,7 +88,7 @@
         padding: 0% 10%;
     }
     .book{
-    min-width: 80px;    
+        min-width: 80px;    
     }
     .book-title {
         font-size: 3vw;

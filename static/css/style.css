@@ -658,12 +658,12 @@ footer {
     height: 45vh;
   }
   #banner {
-    min-height: 10vh;
+    min-height: 12vh;
   }
   .is-hidden {
     -webkit-transition: top .2s ease-in-out;
     transition: top .2s ease-in-out;
-    top: -10vh;
+    top: -12vh;
   }
   .is-visible {
     -webkit-transition: top .2s ease-in-out;

@@ -25,7 +25,7 @@ function showNav() {
 
 
 function animateCSS(element, animation, hide) {
-    console.log(element);
+
     prefix = 'animate__';
     // We create a Promise and return it
     new Promise((resolve, reject) => {
@@ -52,7 +52,6 @@ function animateCSS(element, animation, hide) {
             };
 
             if (element = "#arrow") {
-                console.log("done")
                 $('#arrow').addClass("animate__animated").addClass("animate__flash").addClass("animate__repeat-3")
             }
 
