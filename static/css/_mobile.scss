@@ -37,27 +37,6 @@
    
 }
 
-@media screen and (max-width: 500px) {
-    #hero-mobile {
-        display: block;
-        height: 45vh;
-    }
-    #banner {
-        min-height: 12vh;
-    }
-   .is-hidden {
-        transition: top .2s ease-in-out;
-        top: -12vh;
-    }
-    .is-visible {
-        transition: top .2s ease-in-out;
-        top: -3vh;
-    }
-    #book-display {
-        height: 26vh;
-   }
-}
-
 @media screen and (max-width: 768px) {
     .button {
         font-size: 3.5vw;
@@ -96,5 +75,32 @@
     .book-info {
         font-size: 2vw;
     }
+    #data-blurb-bookshare-10238571 {
+        min-height: 40vh; 
+        }
 }
 
+@media screen and (max-width: 500px) {
+    #hero-mobile {
+        display: block;
+        height: 45vh;
+    }
+    #banner {
+        min-height: 12vh;
+    }
+   .is-hidden {
+        transition: top .2s ease-in-out;
+        top: -12vh;
+    }
+    .is-visible {
+        transition: top .2s ease-in-out;
+        top: -3vh;
+    }
+    #book-display {
+        height: 26vh;
+   }
+   #data-blurb-bookshare-10238571 {
+    min-height: 25vh; 
+   
+    }
+}

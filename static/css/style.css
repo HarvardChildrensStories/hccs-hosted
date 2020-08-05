@@ -223,11 +223,11 @@ nav li {
 .text span:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .7s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23c2cbff' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   color: #C2CBFF;
-  background-position: center 90%;
   background-repeat: repeat-x;
-  background-size: 80%;
+  background-position: center 90%;
+  background-size: 1.5em;
   border-bottom: 0;
-  padding-bottom: .3em;
+  padding-bottom: .4em;
   text-decoration: none;
 }
 
@@ -261,6 +261,10 @@ nav li {
   font-weight: bold;
   z-index: 1;
   color: #fff;
+}
+
+#data-blurb-bookshare-10238571 {
+  min-height: 65vh;
 }
 
 #partner {
@@ -531,7 +535,11 @@ h2 {
 }
 
 .frame {
-  padding: 5% 11% 0% 11%;
+  padding: 2% 15% 0% 15%;
+}
+
+.frame p {
+  text-align: justify;
 }
 
 .frame2 {
@@ -652,29 +660,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px) {
-  #hero-mobile {
-    display: block;
-    height: 45vh;
-  }
-  #banner {
-    min-height: 12vh;
-  }
-  .is-hidden {
-    -webkit-transition: top .2s ease-in-out;
-    transition: top .2s ease-in-out;
-    top: -12vh;
-  }
-  .is-visible {
-    -webkit-transition: top .2s ease-in-out;
-    transition: top .2s ease-in-out;
-    top: -3vh;
-  }
-  #book-display {
-    height: 26vh;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .button {
     font-size: 3.5vw;
@@ -711,6 +696,35 @@ footer {
   }
   .book-info {
     font-size: 2vw;
+  }
+  #data-blurb-bookshare-10238571 {
+    min-height: 40vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hero-mobile {
+    display: block;
+    height: 45vh;
+  }
+  #banner {
+    min-height: 12vh;
+  }
+  .is-hidden {
+    -webkit-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
+    top: -12vh;
+  }
+  .is-visible {
+    -webkit-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out;
+    top: -3vh;
+  }
+  #book-display {
+    height: 26vh;
+  }
+  #data-blurb-bookshare-10238571 {
+    min-height: 25vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
