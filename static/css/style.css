@@ -756,6 +756,7 @@ footer a:hover {
   }
   #banner {
     min-height: 12vh;
+    background-position: 50% 52%;
   }
   .is-hidden {
     -webkit-transition: top .2s ease-in-out;
