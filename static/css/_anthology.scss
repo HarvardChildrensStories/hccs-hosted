@@ -32,9 +32,9 @@
 
 .text {
     background-color: $white;
-    font-size: 1.3vw;
-    color: $lightblue;
-    @include questa();
+    font-size: 1.4vw;
+    color: $blue;
+    @include cormorant();
     border-style: double;
     border-radius: 10px;
     border-width: .5vw;

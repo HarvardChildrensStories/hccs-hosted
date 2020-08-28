@@ -16,6 +16,18 @@
 }
 
 @font-face {
+    font-family: 'fnord';
+    src: url('../fonts/fnord-twenty-three.otf') format('otf');
+    @include normal();
+}
+
+@font-face {
+    font-family: 'cormorant';
+    src: url('../fonts/Cormorant-Medium.ttf') format('ttf');
+    @include normal();
+}
+
+@font-face {
     font-family: 'questa';
     src: url('../fonts/questa.woff2') format('woff2'),
          url('../fonts/questa.woff') format('woff');

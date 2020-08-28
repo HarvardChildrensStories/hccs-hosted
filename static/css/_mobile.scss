@@ -5,79 +5,99 @@
 
 .is-gone {
     display: none;
-  }
+}
 
 .is-visible {
     transition: top .5s ease-in-out;
     top: -3vh;
-  }
+}
 
 @media screen and (max-width: 960px) {
     #hero {
         display: none;
-   }
+    }
+
     #hero-mobile {
         display: block;
         height: 70vh;
-   }
-   #book-display {
+    }
+
+    #book-display {
         height: 45vh;
-   }
-   #banner {
+    }
+
+    #banner {
         min-height: 20vh;
     }
+
     .is-hidden {
         transition: top .5s ease-in-out;
         top: -20vh;
     }
+
     .is-visible {
         transition: top .5s ease-in-out;
         top: -2;
     }
-   
+
 }
 
 @media screen and (max-width: 768px) {
     .button {
         font-size: 3.5vw;
     }
+
     .header {
         font-size: 5vw;
     }
-    
+
     #intro {
         font-size: 3vw;
     }
+
     nav a {
         font-size: 1.7vw;
     }
+
     .text {
         font-size: 2.5vw;
     }
+
     h2 {
         font-size: 3.5vw;
     }
+
     div.p-5 {
         padding: 10% !important;
     }
+
     div.mt-5 {
         margin-top: 10% !important;
     }
-    .editors{
+
+    .editors {
         padding: 0% 10%;
     }
-    .book{
-        min-width: 80px;    
+
+    .book {
+        min-width: 80px;
     }
+
     .book-title {
         font-size: 3vw;
     }
+
     .book-info {
         font-size: 2vw;
     }
+
     #data-blurb-bookshare-10238571 {
-        min-height: 40vh; 
-        }
+        min-height: 40vh;
+    }
+
+    #anthology-blurb-link {
+        padding: 0% 10%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -85,22 +105,34 @@
         display: block;
         height: 45vh;
     }
+
     #banner {
         min-height: 12vh;
     }
-   .is-hidden {
+
+    .is-hidden {
         transition: top .2s ease-in-out;
         top: -12vh;
     }
+
     .is-visible {
         transition: top .2s ease-in-out;
         top: -3vh;
     }
+
     #book-display {
         height: 26vh;
-   }
-   #data-blurb-bookshare-10238571 {
-    min-height: 25vh; 
-   
+    }
+
+    #data-blurb-bookshare-10238571 {
+        min-height: 25vh;
+    }
+
+    footer {
+        font-size: 3vw;
+
+        a {
+            font-size: 3vw;
+        }
     }
 }

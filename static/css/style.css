@@ -34,7 +34,7 @@ nav li {
 }
 
 #col-left > li {
-  padding: 2%;
+  padding: 1.5%;
 }
 
 #col-right > li {
@@ -108,8 +108,8 @@ nav li {
 #intro {
   font-size: 1.6vw;
   background-color: #FFF;
-  color: #FFD100;
-  font-family: 'questa', sans-serif;
+  color: #FFC200;
+  font-family: 'cormorant';
   text-align: center;
 }
 
@@ -191,9 +191,9 @@ nav li {
 
 .text {
   background-color: #FFF;
-  font-size: 1.3vw;
-  color: #60CDEB;
-  font-family: 'questa', sans-serif;
+  font-size: 1.4vw;
+  color: #1cb7e2;
+  font-family: 'cormorant';
   text-align: center;
   border-style: double;
   border-radius: 10px;
@@ -207,7 +207,7 @@ nav li {
 }
 
 .text a:hover {
-  color: #FFD100;
+  color: #FFC200;
 }
 
 .text span {
@@ -330,8 +330,8 @@ nav li {
 }
 
 .book-header {
-  color: #FFD100;
-  font-family: 'questa', sans-serif;
+  color: #FFC200;
+  font-family: 'cormorant';
   text-align: center;
   margin-bottom: 2%;
 }
@@ -349,7 +349,7 @@ nav li {
   height: 100%;
   width: 100%;
   color: #FFF;
-  font-family: 'questa', sans-serif;
+  font-family: 'questa';
   text-align: center;
   padding: 10%;
   left: 0px;
@@ -380,14 +380,14 @@ nav li {
 }
 
 .warning {
-  font-family: 'questa', sans-serif;
+  font-family: 'questa';
   text-align: center;
   font-size: 2vw;
   border-style: double;
   border-radius: 5px;
   padding: 1%;
   color: #60CDEB;
-  border-color: #FFD100;
+  border-color: #FFC200;
 }
 
 #child-left {
@@ -504,6 +504,10 @@ nav li {
   padding-bottom: 10px;
 }
 
+.lightblue {
+  color: #60CDEB;
+}
+
 h2 {
   color: #0090B8;
   font-size: 2vw;
@@ -547,33 +551,37 @@ h2 {
 }
 
 .button {
-  font-family: 'questa', sans-serif;
+  font-family: 'cormorant';
   text-align: center;
   font-size: 2vw;
-  padding: 0% 1%;
+  padding: .1% 1% .1% 1%;
   border-style: double;
   border-radius: 5px;
 }
 
 .button:hover {
-  opacity: 0.8;
   text-decoration: none;
+  -webkit-animation: tada;
+          animation: tada;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  cursor: pointer;
 }
 
 .yellow-button {
-  background-color: #FFD100 !important;
+  background-color: #FFC200 !important;
   color: #FFF !important;
   border-color: #FFF !important;
 }
 
 .white-button {
   background-color: #FFF;
-  color: #FFD100;
-  border-color: #FFD100;
+  color: #FFC200;
+  border-color: #FFC200;
 }
 
 .white-button:hover {
-  color: #FFD100;
+  color: #FFC200;
 }
 
 @font-face {
@@ -589,20 +597,56 @@ h2 {
 }
 
 @font-face {
+  font-family: 'fnord';
+  src: url("../fonts/fnord-twenty-three.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cormorant';
+  src: url("../fonts/Cormorant-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'questa';
   src: url("../fonts/questa.woff2") format("woff2"), url("../fonts/questa.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.685);
-  color: #696a70;
+  height: 10vh;
+  padding: 5% 0% 15% 0%;
+  background-color: white;
+  font-size: 1.5vw;
+  color: #FFC200;
+  font-family: 'cormorant';
   text-align: center;
+}
+
+footer a {
+  font-size: 2vw;
+  padding: 1%;
+  color: #FFC200;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FFC200;
+  -webkit-animation: flash;
+          animation: flash;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  cursor: pointer;
 }
 
 .icon {
@@ -700,6 +744,9 @@ footer {
   #data-blurb-bookshare-10238571 {
     min-height: 40vh;
   }
+  #anthology-blurb-link {
+    padding: 0% 10%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -725,6 +772,12 @@ footer {
   }
   #data-blurb-bookshare-10238571 {
     min-height: 25vh;
+  }
+  footer {
+    font-size: 3vw;
+  }
+  footer a {
+    font-size: 3vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

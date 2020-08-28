@@ -1,5 +1,6 @@
-$gold: #FFD100;
+$gold: #FFC200;
 $lightblue: #60CDEB;
+$blue: #1cb7e2;
 $darkblue: #0090B8;
 $lightlilac: #C2CBFF;
 $darklilac: #A9B6FF;
@@ -8,7 +9,17 @@ $darkbrown: #473B29;
 $white: #FFF;
 
 @mixin questa {
-    font-family: 'questa', sans-serif; 
+    font-family: 'questa'; 
+    text-align: center;
+}
+
+@mixin fnord {
+    font-family: 'fnord'; 
+    text-align: center;
+}
+
+@mixin cormorant {
+    font-family: 'cormorant'; 
     text-align: center;
 }
 
