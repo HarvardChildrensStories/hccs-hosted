@@ -14,6 +14,27 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <style>
+        .video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    </style>
 
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -85,7 +106,7 @@ Author Talks
             <div class="row header lightblue mt-5 p-0 justify-content-center">
                 <div id="child-left" class="col"></div>
                 <div class="col-auto p-0">
-                    Check out our fireside chats!
+                    Fireside Chats!
                 </div>
                 <div id="child-right" class="col"></div>
             </div>
@@ -97,9 +118,9 @@ Author Talks
                     <br>
                         Professor Fernando Reimers
                     </p>
-                    <iframe isrc="https://www.youtube.com/embed/70JNcsFhuF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        class="mb-10 p-0">
-                    </iframe>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/70JNcsFhuF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
                     <br>
